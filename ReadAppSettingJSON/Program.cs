@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //Read from App settings
+string input = Console.ReadLine();
 
 var config1 = builder.Configuration["DefaultLevel:Error"];
 Debug.WriteLine("Error", config1);
